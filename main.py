@@ -18,7 +18,7 @@ bad_words = ['fuck', 'shit', 'bitch', 'dick', 'pussy', 'rascal', 'bastard', 'hor
 manual = ('MONKE COMMANDS:\n'
             '\n> monke manual: Ask bot to show commands!\n'
             '\n> monke greet: Ask bot to greet you!\n'
-            '\n> monke inspire: When you need a little push!\n'
+            '\n> monke quote: Ask bot for a quote!!\n'
             '\n> monke meme: When you are itching for a good laugh!\n'
             '\n> monke hentai: Horny Bastard!\n'
             '\n> monke holup: When you are itching for a spicy hol!\n'
@@ -99,11 +99,11 @@ async def on_message(message):
                 embed.set_footer(text="Bot developed by: Aayush Shrestha")
                 await message.channel.send(embed=embed)
 
-#Monke Inspire
-    if message.content == ("monke inspire"):
+#Monke Quote
+    if message.content == ("monke quote"):
         quote = get_quote()
         myEmbed = discord.Embed(
-            title="Inspiration for you!",
+            title="Quote for you!",
             description=quote,
             color=discord.Color.green()
         )
