@@ -19,7 +19,7 @@ A Discord bot to bring joy in your server.
 * Create `main.py` and `keep_alive.py` in your new repl.
 * Copy and paste the code from the respective `main.py` and `keep_alive.py` files from your local machine.
 * Create a secret environment variable.
-* Uncomment line 8,119 and 121 from main.py
+* Uncomment line 8,119 and 121 in `main.py`
 ```
 008 from keep_alive import keep_alive
 119 keep_alive()
