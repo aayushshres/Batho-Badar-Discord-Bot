@@ -1,4 +1,4 @@
-# Batho-Badar-Discord-Bot
+# Monke-Discord-Bot
 A Discord bot to bring joy in your server.
 
 # Table of contents
