@@ -47,7 +47,6 @@ async def on_message(message):
     
     msg = message.content.lower()
 
-    #await message.send("Ping Pong! Batho Badar here!\nEnter 'monke manual' for Batho Badar's Manual")
 #Monke check for sad words
     if any(word in msg for word in sad_words):
         await message.channel.send(random.choice(encouragements))

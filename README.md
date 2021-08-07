@@ -10,20 +10,20 @@ A Discord bot to bring joy in your server.
 # Setup & Run
 * First you need to register a new application or bot at https://discord.com/developers/applications.
 * Next, open the `.env` file and specify the token value. Value provided in the file is just for example.
-* Add the bot to your discord server and run `main.py` file. 
-* At this moment this bot runs locally so feel free to add and remove bot features by editing `main.py` file and testing it.
+* Add the bot to your discord server and run `main_version-1-0-2.py` file. 
+* At this moment this bot runs locally so feel free to add and remove bot features by editing `main_version-1-0-2.py` file and testing it.
 
 # Hosting for free in Cloud
 * First go to https://replit.com/ and create a free account.
 * Create a new repl for python.
 * Create `main.py` and `keep_alive.py` in your new repl.
-* Copy and paste the code from the respective `main.py` and `keep_alive.py` files from your local machine.
+* Copy and paste the code from the respective `main_version-1-0-2.py` and `keep_alive.py` files from your local machine.
 * Create a secret environment variable.
-* Uncomment line 8,119 and 121 in `main.py`
+* Uncomment the following lines from `main_version-1-0-2.py`
 ```
-008 from keep_alive import keep_alive
-119 keep_alive()
-121 my_secret = os.environ['TOKEN']
+ from keep_alive import keep_alive
+ keep_alive()
+ my_secret = os.environ['TOKEN']
 ```
 * Run `main.py` and wait for repl to download required modules and run it.(This process might take some time depending on your internet speed)
 * You will be able to see the following window:
