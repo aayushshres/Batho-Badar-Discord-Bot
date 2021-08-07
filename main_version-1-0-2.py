@@ -119,7 +119,13 @@ def get_quote():
 @bot.command(name='quote')
 async def quote(ctx):
     quote = get_quote()
-    await ctx.message.channel.send(quote)
+    quote_embed = discord.Embed(
+      title="Quote for you!",
+      description=quote,
+      color=discord.Color.green()
+    )
+    quote_embed.set_footer(text=':)')
+    await ctx.message.channel.send(embed=quote_embed)
 
 #Monke Hentai
 @bot.command(name='hentai')
