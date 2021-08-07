@@ -42,7 +42,7 @@ async def manual(ctx):
 greetings = ['Hello!', 'Bonjour!', 'Hi!']
 @bot.command(name='greet')
 async def greet(ctx):
-    await ctx.send(greetings)
+    await ctx.send(random.choice(greetings))
 
 #Monke Kick
 @bot.command(name='kick')
