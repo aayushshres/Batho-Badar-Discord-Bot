@@ -44,7 +44,7 @@ async def manual(ctx):
         description=monke_manual,
         color=discord.Color.green()
     )
-    manual_embed.add_field(name='Version Code:', value='v1.0.2', inline=False)
+    manual_embed.add_field(name='Version Code:', value='v1.0.3', inline=False)
     manual_embed.set_footer(text='Author: Aayush Shrestha')
     manual_embed.set_author(name="Monke")
     await ctx.message.channel.send(embed=manual_embed)
