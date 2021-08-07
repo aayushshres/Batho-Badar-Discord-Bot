@@ -4,6 +4,7 @@ import random
 import requests
 import aiohttp
 import json
+import music
 
 #from keep_alive import keep_alive
 from discord.ext import commands
@@ -23,7 +24,17 @@ monke_manual = ('MONKE COMMANDS:\n'
             '\n> monke wholesome: Medicine for your spirit!\n'
             '\n> monke tumblr: When you need tumblr crazyness!\n'
             '\n> monke hentai: nani!\n'
+            '\n> monke join: Ask bot to join voice channel!\n'
+            '\n> monke play: Ask bot to play music!\n'
+            '\n> monke pause: Ask bot to pause music!\n'
+            '\n> monke resume: Ask bot to resume music!\n'
+            '\n> monke disconnect: Ask bot to disconnect!\n'
 )
+
+#Monke Music
+cogs = [music]
+for i in range(len(cogs)):
+    cogs[i].setup(client)
 
 #Monke Manual
 @client.command(name='manual')
@@ -150,7 +161,7 @@ async def on_ready():
 #Monke check
 @client.event
 async def on_message(message):
-    if message.author == bot.user:
+    if message.author == client.user:
         return
     
     msg = message.content.lower()
