@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 bot = commands.Bot(command_prefix='monke ')
 
 #Monke Manual
-manual = ('MONKE COMMANDS:\n'
+monke_manual = ('MONKE COMMANDS:\n'
             '\n> monke manual: Ask bot to show commands!\n'
             '\n> monke greet: Ask bot to greet you!\n'
             '\n> monke kick: Ask bot to kick someone form the server\n'
@@ -30,7 +30,7 @@ manual = ('MONKE COMMANDS:\n'
 async def manual(ctx):
     manual_embed = discord.Embed(
         title="Monke  Manual",
-        description=manual,
+        description=monke_manual,
         color=discord.Color.green()
     )
     manual_embed.add_field(name='Version Code:', value='v1.0.2', inline=False)
